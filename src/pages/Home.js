@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -19,6 +20,7 @@ function Home() {
     <>
       <header>
         {/* place NavBar here */}
+        <Link to="/Login">Login</Link> | <Link to="/About">About</Link> | <Link to="/profile">Profile</Link>
       </header>
       <main>
         <h1>Home!</h1>
